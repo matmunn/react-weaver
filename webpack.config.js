@@ -103,7 +103,10 @@ function getBaseConfig() {
         },
         {
           test: /\.(jpe?g|png|woff|woff2|eot|ttf|otf|svg)$/,
-          loader: 'url-loader?limit=100000',
+          loader: 'url-loader',
+					options: {
+						limit: 100000,
+					},
         }
       ]
     },
