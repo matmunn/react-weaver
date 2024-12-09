@@ -115,7 +115,7 @@ export function useForm(args: IUseFormArgs = {}) {
         id: name,
         name,
         value: valuesProxy[name],
-        onChange: updateValuesProxy[name],
+        onChange: updateValues,
         disabled: loading,
         onBlur: handleBlur[name],
         error: errors[name],
